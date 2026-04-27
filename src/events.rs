@@ -120,10 +120,10 @@ fn handle_normal(app: &mut App, key: crossterm::event::KeyEvent) -> Result<bool>
             app.popup_content = vec![
                 "Pass the binary as the first argument:".into(),
                 "".into(),
-                "  revetui /bin/ls".into(),
-                "  revetui /usr/sbin/sshd".into(),
-                "  revetui ./malware.elf".into(),
-                "  revetui ./binary --dynamic".into(),
+                "  revtui /bin/ls".into(),
+                "  revtui /usr/sbin/sshd".into(),
+                "  revtui ./malware.elf".into(),
+                "  revtui ./binary --dynamic".into(),
                 "".into(),
                 "Press any key to close.".into(),
             ];

@@ -20,8 +20,8 @@ fn main() -> Result<()> {
     let dynamic_flag = args.iter().any(|a| a == "--dynamic" || a == "-d");
 
     if args.iter().any(|a| a == "--help" || a == "-h") {
-        println!("RevETUI — Advanced Reverse Engineering Terminal UI");
-        println!("Usage: revetui [FILE] [--dynamic]");
+        println!("RevTUI — Advanced Reverse Engineering Terminal UI");
+        println!("Usage: revtui [FILE] [--dynamic]");
         println!();
         println!("  FILE       Binary to analyze (ELF/PE)");
         println!("  --dynamic  Start in dynamic analysis tab");

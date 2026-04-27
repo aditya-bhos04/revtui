@@ -73,7 +73,7 @@ fn draw_tab_bar(f: &mut Frame, app: &App, area: Rect) {
     let file_label = app.file_path.as_deref()
         .map(|p| std::path::Path::new(p).file_name().and_then(|n| n.to_str()).unwrap_or(p))
         .unwrap_or("No file loaded");
-    let title = format!(" ▌RevETUI▐  ·  {} ", file_label);
+    let title = format!(" ▌RevTUI▐  ·  {} ", file_label);
 
     let tabs = Tabs::new(titles)
         .select(selected_idx)
@@ -184,7 +184,7 @@ fn draw_binary_info(f: &mut Frame, app: &App, area: Rect) {
             Line::from(""),
             Line::from(Span::styled("  No binary loaded.", Style::default().fg(CLR_DIM))),
             Line::from(""),
-            Line::from(Span::styled("  Usage: revetui /path/to/binary", Style::default().fg(CLR_TEAL))),
+            Line::from(Span::styled("  Usage: revtui /path/to/binary", Style::default().fg(CLR_TEAL))),
         ]).block(block), area);
     }
 }
@@ -405,7 +405,7 @@ fn draw_dynamic(f: &mut Frame, app: &App, area: Rect) {
     let hint = if app.file_path.is_some() {
         " [r] Run all tools: strace · ltrace · ldd · readelf · checksec · objdump · strings "
     } else {
-        " No binary loaded — run: revetui /path/to/binary "
+        " No binary loaded — run: revtui /path/to/binary "
     };
     f.render_widget(
         Paragraph::new(hint).style(Style::default().fg(CLR_YELLOW))
@@ -841,7 +841,7 @@ fn draw_entropy(f: &mut Frame, app: &App, area: Rect) {
 // ── Help ──────────────────────────────────────────────────────────────────────
 
 fn draw_help(f: &mut Frame, _app: &App, area: Rect) {
-    let block = styled_block(" ◈ RevETUI — Help & Keyboard Reference ", CLR_ACCENT);
+    let block = styled_block(" ◈ RevTUI — Help & Keyboard Reference ", CLR_ACCENT);
     let inner = block.inner(area);
     f.render_widget(block, area);
 
