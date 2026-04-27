@@ -1,0 +1,20 @@
+[package]
+name = "revetui"
+version = "0.1.0"
+edition = "2021"
+
+[[bin]]
+name = "revetui"
+path = "src/main.rs"
+
+[dependencies]
+ratatui    = "0.26"
+crossterm  = "0.27"
+anyhow     = "1.0"
+goblin     = "0.8"
+capstone   = "0.12"
+sha2       = "0.10"
+md5        = "0.7"
+regex      = "1.10"
+serde      = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
