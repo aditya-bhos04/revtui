@@ -56,6 +56,39 @@ Function List  →[Enter]→  Linear Disasm  →[v]→  CFG Graph
 - **Fortify** — `_chk`-suffixed function symbols
 ---
  
+## Screenshots
+
+A full static and dynamic analysis suite — every panel designed for real reverse engineering workflows.
+
+<table>
+  <tr>
+    <td align="center"><b>Dashboard</b></td>
+    <td align="center"><b>Disasm</b></td>
+  </tr>
+  <tr>
+    <td><img src="assets/screenshots/dashboard.png" alt="Dashboard" width="100%"/></td>
+    <td><img src="assets/screenshots/disasm.png" alt="Disasm" width="100%"/></td>
+  </tr>
+  <tr>
+    <td align="center"><b>Sections</b></td>
+    <td align="center"><b>Dynamic Analysis</b></td>
+  </tr>
+  <tr>
+    <td><img src="assets/screenshots/sections.png" alt="Sections" width="100%"/></td>
+    <td><img src="assets/screenshots/dynamic.png" alt="Dynamic Analysis" width="100%"/></td>
+  </tr>
+  <tr>
+    <td align="center"><b>Symbols</b></td>
+    <td align="center"><b>Entropy</b></td>
+  </tr>
+  <tr>
+    <td><img src="assets/screenshots/symbols.png" alt="Symbols" width="100%"/></td>
+    <td><img src="assets/screenshots/entropy.png" alt="Entropy Heatmap" width="100%"/></td>
+  </tr>
+</table>
+
+---
+ 
 ## Installation
  
 ### Requirements
@@ -63,7 +96,7 @@ Function List  →[Enter]→  Linear Disasm  →[v]→  CFG Graph
 - **Linux** (x86_64 / ARM64)
 ### Build
 ```bash
-git clone https://github.com/yourusername/revtui
+git clone https://github.com/aditya-bhos04/revtui
 cd revtui
 cargo build --release
 ./target/release/revtui --help
@@ -197,7 +230,7 @@ Ratatui made it possible to build a genuinely beautiful, responsive, and feature
  
 If you're building anything terminal-based in Rust, Ratatui is the library to reach for. Check it out at **[ratatui.rs](https://ratatui.rs)**.
  
-
+ 
  
 ## Contributing
  
